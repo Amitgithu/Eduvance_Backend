@@ -30,7 +30,7 @@ dotenv.config();
 
 console.log("📦 Mongo URI:", process.env.MONGODB_URI); // Debug log
 
-mongoose.connect(process.env.MongoDB_URI)
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connected to MongoDB');
     app.listen(PORT, () => {
