@@ -17,7 +17,7 @@ const courseRoutes = require('./routes/courseRoutes');
 const lectureRoutes = require('./routes/lectureRoutes');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use("/files", express.static("files"));
 app.use(cors());
